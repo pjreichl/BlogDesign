@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #fbf9f4;
+    font-family: 'Bitter', serif;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.tag-line {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+#best {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ul {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+ul li a {
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: mediumblue;
+    list-style: none;
+}
+
+.navbar-item:hover, .link-text:hover {
+    font-size: 150%;
+    color: darkblue;
+}
+
+.main {
+    background-color: #d8dadc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.recent-posts {
+    background-color: #d8dadc;
+}
+
+.recent-cards {
+    background-color: #d8dadc;
+}
+
+.card {
+    border: 1px solid black;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.card-image {
+    background-color: #333;
+}
+img {
+    height: 125px;
+    width: 148px;
+    margin-bottom: 0;
+}
+
+.business, .location, .post-link {
+    text-align: center;
+    background-color: #fbf9f4;
+    padding: 5px;
+}
+
+.business {
+    font-size: 1.25em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.location {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contents {
+    background-color: #d8dadc;
+}
+
+.post-link {
+    margin-top: 0;
+}
+
+.link-text {
+    color: mediumblue;
+}
+
+.all-posts {
+    margin: 60px auto;
+}
+
+.all-posts-text {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.all-posts-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.all-posts-icon:hover {
+    width: 20%;
+    height: 20%;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.email-input {
+    width: 50%;
+    border: 2px solid #36464f;
+    background-color: whitesmoke;
+    padding-left: 10px;
+}
+
+.subscribe-btn {
+    font-size: 20px;
+    width: 125px;
+    background-color: #36464f;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 2px solid #36464f;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.icons {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+    color: #36464f;
+    cursor: pointer;
+}
+
+.icons:hover {
+    opacity: 0.7;
+    font-size: 200%;
+}
+
+@media screen and (min-width: 700px) {
+    .recent-cards {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: 225px 225px;
+        grid-gap: 80px 20px;
+        grid-template-areas: 
+        "topLeft topMiddle topRight"
+        "bottomLeft bottomMiddle bottomRight";
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .main {
+        padding-bottom: 50px;
+    }
+
+    .card {
+        height: 250px;
+    }
+
+    #one {
+        grid-area: topLeft;
+    }
+
+    #two {
+        grid-area: topMiddle;
+    }
+
+    #three {
+        grid-area: topRight;
+    }
+
+    #four {
+        grid-area: bottomLeft;
+    }
+
+    #five {
+        grid-area: bottomMiddle;
+    }
+
+    #six {
+        grid-area: bottomRight;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+     .recent-cards {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 18vw 18vw 18vw 18vw;
+        grid-template-rows: 225px 225px;
+        grid-gap: 120px 55px;
+        grid-template-areas: 
+        "topLeft topMidLeft topMidRight topRight"
+        "bottomLeft bottomMidLeft bottomMidRight bottomRight";
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 4.5em;
+    }
+
+    .tag-line {
+        font-size: 1.25em;
+    }
+
+    .navbar-item {
+        font-size: 1.25em;
+    }
+
+    .main {
+        padding-bottom: 120px;
+    }
+
+    .card {
+        height: 300px;
+        width: 200px;
+    }
+
+    img {
+        width: 198px;
+        height: 150px;
+    }
+
+    #one {
+        grid-area: topLeft;
+    }
+
+    #two {
+        grid-area: topMidLeft;
+    }
+
+    #three {
+        grid-area: topMidRight;
+    }
+
+    #four {
+        grid-area: topRight;
+    }
+
+    #five {
+        grid-area: bottomMidLeft;
+    }
+
+    #six {
+        grid-area: bottomMidRight;
+    }
+
+    .all-posts {
+        margin-top: 150px;
+    }
+
+    .subscribe-btn {
+    font-size: 28px;
+    width: 150px;
+    background-color: #36464f;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 2px solid #36464f;
+}
+}
