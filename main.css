@@ -1,3 +1,6 @@
+@import "CSS/aboutMe.css";
+@import "CSS/post.css";
+
 * {
     box-sizing: border-box;
     padding: 0;
